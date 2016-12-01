@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 public class BigDecimalTest {
 	public static void main(String[] args) {
-		test05();
+		test06();
 	}
 
 	public static final String merAmtToAmount(String amt) {
@@ -60,4 +60,14 @@ public class BigDecimalTest {
 		BigDecimal b = new BigDecimal("0.11221");
 		System.out.println(a.multiply(b));
 	}
+	
+	/**
+	 * 除法(可以用户精确小数点)
+	 */
+	public static void test06(){
+		BigDecimal a = new BigDecimal("10");
+		BigDecimal b = new BigDecimal("2");
+		System.out.println(a.divide(b, 2, BigDecimal.ROUND_HALF_UP));
+	}
+		
 }
