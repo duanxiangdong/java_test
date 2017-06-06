@@ -31,3 +31,6 @@
 /target/classes/com/test/thread/CallableAndFuture.class
 /target/classes/com/test/util/Constants.class
 /target/classes/com/test/util/DateUtils.class
+.idea/
+target/
+java_test.iml
